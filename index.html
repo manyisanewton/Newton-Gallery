@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>E-commerce app</title> 
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="background:linear-gradient(110deg,yellow 0%,azure 20%,pink 70%);"> <!-- Background gradient for the page -->
+
+    <div class="container"> <!-- Wrapper for all content -->
+        
+        <!-- Product Section -->
+        <section class="products">
+            <h1 class="home-title">
+                <!-- Welcome message with a scrolling effect using <marquee> tag -->
+                <marquee bgcolor="green" style="width: 900px;border-radius: 4px;">
+                    🌟 Welcome to our online cosmetic shop, where beauty 💄 meets affordability 💰 with top-quality products for everyone! ✨🛍️
+                </marquee>
+            </h1>
+            <div id="product-list" class="product-list"></div> <!-- This is where product items will be listed dynamically -->
+        </section>
+
+        <!-- Shopping Cart Section -->
+        <section id="cart-section" class="cart">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2> <!-- Cart title -->
+            </div>
+            <ul id="cart-items"></ul> <!-- List of items in the cart will appear here -->
+            <div id="cart-summary">
+                <!-- Total price of items in the cart -->
+                <p>Total: $<span id="cart-total">0.00</span></p>
+            </div>
+            <div class="cart-buttons">
+                <!-- Buttons for checkout and closing the cart -->
+                <button id="checkout-btn" onclick="checkout()">Checkout</button>
+                <button id="close-cart" onclick="closeCart()">Close</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Cart Icon (Appears on the page to toggle cart visibility) -->
+    <div class="cart-icon" onclick="toggleCart()">
+        <!-- Cart icon SVG image -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+        </svg>
+        <!-- Number of items in the cart displayed next to the icon -->
+        <span id="cart-count">0</span>
+    </div>
+
+    <script src="./js.js"></script> 
+
+</body>
+</html>

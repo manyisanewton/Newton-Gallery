@@ -1,0 +1,28 @@
+/*Project Name: To-Do List App
+Description: Build a simple to-do list application where users can:
+
+Add new tasks.
+Mark tasks as completed.
+Delete tasks.
+Features:
+
+A text input to type in tasks.
+A button to add tasks.
+A list to display tasks.
+Tasks should have a checkbox to mark them as completed.
+A delete button for each task to remove it from the list.
+Basic Requirements:
+HTML: Structure for the input, button, and list.
+CSS: Styling for the to-do list (e.g., completed tasks have a strikethrough).
+JavaScript: Handle user actions like adding, marking as complete, and deleting tasks.
+Bonus Challenges:
+Save tasks in localStorage so they persist after the page reloads.
+Add a counter to show how many tasks are remaining.
+Filter tasks (e.g., show all, completed, or active tasks).
+How to Run It
+Create three files: index.html, styles.css, and script.js.
+Copy and paste the respective code into each file.
+Open the index.html file in your browser.
+What to Submit
+Ensure the app runs without errors.
+You can customize the design or add extra features like localStorage or task filters if you have time.*/
